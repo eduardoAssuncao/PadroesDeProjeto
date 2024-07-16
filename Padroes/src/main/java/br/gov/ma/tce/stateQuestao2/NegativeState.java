@@ -1,4 +1,4 @@
-package br.gov.ma.tce;
+package br.gov.ma.tce.stateQuestao2;
 
 public class NegativeState extends State{
 
