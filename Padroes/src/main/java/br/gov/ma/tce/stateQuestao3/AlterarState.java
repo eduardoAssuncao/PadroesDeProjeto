@@ -14,14 +14,12 @@ public class AlterarState extends State{
 
     @Override
     public String cancelar() {
-        pedido.setStatus(Status.CANCELADO);
         pedido.setState(new CancelarState(pedido));
         return "Realizando cancelamento.";
     }
 
     @Override
     public String enviar() {
-        pedido.setStatus(Status.ENVIADO);
         pedido.setState(new EnviarState(pedido));
         return "Realizando envio";
     }
