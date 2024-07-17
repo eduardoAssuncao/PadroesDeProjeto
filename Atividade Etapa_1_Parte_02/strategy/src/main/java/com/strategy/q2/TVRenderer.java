@@ -1,9 +1,0 @@
-package com.strategy.q2;
-
-public class TVRenderer implements RendererStrategy{
-    
-    @Override
-    public void mostrarImagem(){
-        System.out.println("Lógica para mostrar imagem na TV");
-    }
-}
