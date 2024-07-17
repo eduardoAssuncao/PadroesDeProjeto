@@ -1,0 +1,16 @@
+1. O padrão State é um ótimo padrão para ser aplicado em situações que se necessita representar vários status/condições que seguem um fluxo, por regra, tendo, cada status, uma condição interna a ser seguida para que seja chamada um nosso status, alterando seu comportamento de acordo com o cenário.
+
+O principal ponto positivo é a possiblidade de delegar trabalho, possibilitando abstração, flexibilidade e seguir alguns princípios SOLID como o SRP (Princípio de Responsabilidade Única) e OCP (Princípio Aberto-Fechado).
+
+Um ponto negativo está no fato de que a sua utilização não depende apenas da presença de uma estratégia baseada em status, mas sim da robustez dos status, quanto a quantidade, e da necessidade de use de cada um deles.
+
+5. Factory - Termo que representa uma função, método ou classe que produz/cria algo.
+   Creation method - Método de criação (chamada de um construtor) que permite isolamento e criação de lógicas que podem ser de criação ou, até mesmo, retorno.
+   Static creation method - É um método de criação declarado como static, assim, não sendo necessário criar um objeto para ser criado. Sendo static, ele não pode ser estendido em subclasses. Normalmente, os construtores têm que retornar novas instâncias de classe. O método de criação estática é uma solução alternativa para essa limitação.
+   Simple factory pattern - É representado por um único método e uma única classe, mas, com o passar do tempo, ele pode acabar se tornando um padrão clássico de Factory Method. Esse padrão é uma classe que tem um método de criação com um grande condicional que, com base nos parâmetros do método, escolhe qual classe de produto instanciar e depois retornar.
+   Factory Method pattern - É um padrão criacional que fornece uma interface para criar objetos, mas permite que subclasses alterem o tipo de um objeto que será criado.
+   Abstract Factory pattern - Padrão criacional que permite produzir famílias de objetos relacionados ou dependentes sem especificar suas classes de concreto.
+
+Cada um desses padrões de criação de objetos possibilitam tornar o código mais flexível e escalável, tendo, como um deles, a sua maneira de ser implementado e caso a ser implementado. Apesar disso, todos apresentam o objetivo principal de desacoplar o código de objetos da lógica de negócios.
+
+Link para imagem de comparação -> https://i.imgur.com/JUnqaQI.png
