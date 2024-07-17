@@ -1,6 +1,5 @@
 package br.gov.ma.tce.factoryMethodQuestao5;
 
-import br.gov.ma.tce.factoryMethodQuestao5.produto.Sanduiche;
 import br.gov.ma.tce.factoryMethodQuestao5.produtor.Lanchonete;
 import br.gov.ma.tce.factoryMethodQuestao5.produtor.SanduicheCGFactory;
 import br.gov.ma.tce.factoryMethodQuestao5.produtor.SanduicheJPFactory;
@@ -14,10 +13,10 @@ public class Main {
         Lanchonete lanchoneteRT = new SanduicheRTFactory();
 
         System.out.println("Sanduiche JP");
-        Sanduiche sanduicheJP = lanchoneteJP.pedirSanduiche();
+        lanchoneteJP.produzirSanduiche();
         System.out.println("\nSanduiche CG");
-        Sanduiche sanduicheCG = lanchoneteCG.pedirSanduiche();
+        lanchoneteCG.produzirSanduiche();
         System.out.println("\nSanduiche RT");
-        Sanduiche sanduicheRT = lanchoneteRT.pedirSanduiche();
+        lanchoneteRT.produzirSanduiche();
     }
 }

@@ -4,7 +4,7 @@ import br.gov.ma.tce.factoryMethodQuestao5.produto.Sanduiche;
 
 public abstract class Lanchonete {
 
-    public Sanduiche pedirSanduiche(){
+    public Sanduiche produzirSanduiche(){
         Sanduiche sanduiche = null;
 
         sanduiche = criarSanduiche();
