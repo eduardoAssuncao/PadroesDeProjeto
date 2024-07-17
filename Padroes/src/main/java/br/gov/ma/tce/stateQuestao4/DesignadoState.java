@@ -9,36 +9,38 @@ public class DesignadoState extends State{
 
     @Override
     public String valido() {
-        return "";
+        return "Processo já validado";
     }
 
     @Override
     public String designado() {
-        return "";
+        return "Processo designado";
     }
 
     @Override
     public String cancelar() {
-        return "";
+        return "Processo não pode ser cancelado";
     }
 
     @Override
     public String deferir() {
-        return "";
+        processo.setState(new DeferirStage(processo));
+        return "Processo deferido";
     }
 
     @Override
     public String indeferir() {
-        return "";
+        processo.setState(new IndeferirStage(processo));
+        return "Processo indeferido";
     }
 
     @Override
     public String recurso() {
-        return "";
+        return "Processo ainda não pode entrar em recurso";
     }
 
     @Override
     public String prazoLegal() {
-        return "";
+        return "Prazo legal ainda não verificado";
     }
 }

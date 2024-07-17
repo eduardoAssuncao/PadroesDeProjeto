@@ -9,36 +9,37 @@ public class DeferirStage extends State{
 
     @Override
     public String valido() {
-        return "";
+        return "Processo já validado";
     }
 
     @Override
     public String designado() {
-        return "";
+        return "Processo já designado";
     }
 
     @Override
     public String cancelar() {
-        return "";
+        return "Processo não pode ser cancelado";
     }
 
     @Override
     public String deferir() {
-        return "";
+        return "Processo já deferido";
     }
 
     @Override
     public String indeferir() {
-        return "";
+        return "Processo já deferido";
     }
 
     @Override
     public String recurso() {
-        return "";
+        return "Não é necessário recurso";
     }
 
     @Override
     public String prazoLegal() {
-        return "";
+        processo.setState(new PrazoLegalStage(processo));
+        return "Processo em fechamento";
     }
 }

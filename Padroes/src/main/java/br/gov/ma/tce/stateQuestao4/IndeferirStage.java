@@ -9,36 +9,37 @@ public class IndeferirStage extends State{
 
     @Override
     public String valido() {
-        return "";
+        return "Processo já validado";
     }
 
     @Override
     public String designado() {
-        return "";
+        return "Processo já designado";
     }
 
     @Override
     public String cancelar() {
-        return "";
+        return "Processo não pode ser cancelado";
     }
 
     @Override
     public String deferir() {
-        return "";
+        return "Processo foi indeferido";
     }
 
     @Override
     public String indeferir() {
-        return "";
+        return "Processo já indeferido";
     }
 
     @Override
     public String recurso() {
-        return "";
+        processo.setState(new RecursoStage(processo));
+        return "Processo entrando em recurso";
     }
 
     @Override
     public String prazoLegal() {
-        return "";
+        return "Processo não pode ser fechado";
     }
 }
