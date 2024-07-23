@@ -8,7 +8,5 @@ public abstract class CondimentDecorator extends Pizza{
         this.decotaredPizza = pizza;
     }
 
-    public Double cost() {
-        return null;
-    }
+    public abstract Double cost();
 }

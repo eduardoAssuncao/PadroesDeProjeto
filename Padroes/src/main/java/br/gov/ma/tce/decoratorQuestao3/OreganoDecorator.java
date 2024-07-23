@@ -11,6 +11,6 @@ public class OreganoDecorator extends CondimentDecorator {
     }
 
     public Double cost(){
-        return 1.0;
+        return this.decotaredPizza.cost() + 0.50;
     }
 }

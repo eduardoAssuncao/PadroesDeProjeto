@@ -11,6 +11,6 @@ public class BaconDecorator extends CondimentDecorator {
     }
 
     public Double cost(){
-        return 3.0;
+        return this.decotaredPizza.cost() + 0.80;
     }
 }

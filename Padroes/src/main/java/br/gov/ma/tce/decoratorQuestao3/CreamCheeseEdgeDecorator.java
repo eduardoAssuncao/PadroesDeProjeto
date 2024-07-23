@@ -11,6 +11,6 @@ public class CreamCheeseEdgeDecorator extends CondimentDecorator {
     }
 
     public Double cost(){
-        return 5.0;
+        return this.decotaredPizza.cost() + 1.20;
     }
 }

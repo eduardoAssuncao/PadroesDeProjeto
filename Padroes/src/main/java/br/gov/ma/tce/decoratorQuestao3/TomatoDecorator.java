@@ -11,6 +11,6 @@ public class TomatoDecorator extends CondimentDecorator {
     }
 
     public Double cost(){
-        return 2.0;
+        return this.decotaredPizza.cost() + 0.10;
     }
 }
