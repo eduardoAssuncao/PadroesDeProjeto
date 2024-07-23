@@ -1,6 +1,5 @@
 package br.gov.ma.tce.decoratorQuestao1;
 
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.zip.Deflater;
