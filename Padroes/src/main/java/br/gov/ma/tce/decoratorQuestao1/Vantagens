@@ -1,0 +1,3 @@
+Uma das principais vantagem observadas na implementação é a possibilidade de
+estender, combinar e remover comportamentos, e , além disso, garantir o princípio
+de responsabilidade única (SRP).
