@@ -1,0 +1,4 @@
+A utilização do parão observer permite criar um sistema de mensageria parecido com o Kafka e RabbitMq,
+permitindo um maior encapsulamento, abstração e desacoplamento no momento de realizar notificações para direfentes interessados
+quando uma derterminada modificação ou ação acontece. Além disso, essa construção permite uma melhor manutenção
+e escalabilidade.
