@@ -1,4 +1,15 @@
 package br.gov.ma.tce.composite;
 
-public class Arquivo {
+import java.io.File;
+
+public class Arquivo extends Elemento{
+
+    public Arquivo(File file) {
+        super(file);
+    }
+
+    @Override
+    public long tamanho() {
+        return file.length();
+    }
 }
